@@ -1,0 +1,11 @@
+<p>now is <%= Time.now %></p>
+
+<% categories = [ 'japanese', 'indian', 'french' ] %>
+
+<form action="/restaurants" method="get">
+  <input type="text" name="food_type" placeholder="What kind of food?">
+  <input type="submit">
+</form>
+
+
+<%= categories.each do |
